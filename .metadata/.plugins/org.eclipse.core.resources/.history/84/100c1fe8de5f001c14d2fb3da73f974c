@@ -1,0 +1,5 @@
+<<<<<<<<<<<< Browsers >>>>>>>>>>>
+browser = chrome
+pageload = 60
+implicitwait = 10
+

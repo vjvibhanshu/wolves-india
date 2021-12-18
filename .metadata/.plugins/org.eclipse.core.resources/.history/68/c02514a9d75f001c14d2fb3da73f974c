@@ -1,0 +1,9 @@
+<<<<<<<<<<<< Browsers >>>>>>>>>>>
+browser = chrome
+pageload = 60
+implicitwait = 10
+
+
+<<<<<<<<<<<< Home Page >>>>>>>>>>>
+deptcity = Boston
+destcity = Berlin

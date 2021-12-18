@@ -1,0 +1,52 @@
+package testcases;
+
+
+
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import java.io.IOException;
+
+import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import base.Base;
+import pages.HomePage;
+
+public class HomePageTest extends Base{
+	
+	HomePage hp = new HomePage();
+	public HomePageTest() throws IOException{
+		// TODO Auto-generated constructor stub
+		super();
+	}
+	
+	
+	@BeforeMethod
+	public void launchInitialize() {
+		driver.get("https://blazedemo.com/");
+	}
+	
+	
+	@Test
+	public void verifyTitle() {
+	
+		AssertJUnit.assertEquals(fetchTitile(), "BlazeDemo");
+	}
+
+	
+	@Test
+	public void findFlight() {
+		hp.selectDeptcityText("Boston");
+		hp.selectDestcityText("London");
+		hp.clickOnfindFlight();
+	}
+	
+//    @AfterMethod
+//    public void CloseBrowser(){
+//
+//        driver.quit();
+//    }
+}

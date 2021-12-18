@@ -1,0 +1,14 @@
+package pages;
+
+public class ReserveFlight {
+
+	public ReserveFlight() {
+		// TODO Auto-generated constructor stub
+		
+		
+		public void chooseFlightNo(String val){
+			String val = "//*[contains(text(),'234')]/preceding-sibling::td/input"
+		}
+	}
+
+}

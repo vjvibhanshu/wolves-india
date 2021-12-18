@@ -1,0 +1,32 @@
+package base;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+
+public class Base {
+	
+    public static WebDriver driver;
+    public static Properties prop;
+    
+    
+    public Base() throws IOException{
+    	prop = new Properties();
+    	try {
+    		FileInputStream fip = new FileInputStream(System.getProperty("user.dir") + "/src/main/java/config/config.properties");
+            prop.load(fip);
+    	} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	
+    }
+    
+    public static void initialization() {
+    	
+    }
+
+}

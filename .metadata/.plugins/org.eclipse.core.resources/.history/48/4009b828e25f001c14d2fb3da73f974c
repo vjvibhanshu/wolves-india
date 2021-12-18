@@ -1,0 +1,23 @@
+<<<<<<<<<<<< Browsers >>>>>>>>>>>
+browser = chrome
+pageload = 60
+implicitwait = 10
+
+
+<<<<<<<<<<<< Home Page >>>>>>>>>>>
+launch = 
+deptcity = Boston
+destcity = Berlin
+
+<<<<<<<<<<<< Purchase Page >>>>>>>>>>>
+launch = https://blazedemo.com/purchase.php
+name= Vibhanshu
+address=sample Add
+city=Bangalore
+state=KA
+zipcode=560087
+cardtype=VISA
+cardno=823546790384324
+month=April
+year=2025
+nameoncard=vibhanshu

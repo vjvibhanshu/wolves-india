@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "17a17e11-b6c7-48b8-9602-d88600992526",
+		"name": "TestCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetRequestforSpaceX",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonResponse=pm.response.json();",
+							"pm.test(\"Verify Status code is 200\",function()",
+							"{",
+							"    pm.response.to.have.status(200);",
+							"    ",
+							"});",
+							"",
+							"pm.test(\"Response Body does not have error field\",function()",
+							"{",
+							"    pm.expect(pm.response.text()).not.to.include(\"error\");",
+							"    ",
+							"});",
+							"",
+							"pm.test(\"Verify Status code is not 404, it will fail on success\",function()",
+							"{",
+							"    pm.response.to.have.status(404);",
+							"    ",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.spacexdata.com/v4/launches/latest",
+					"protocol": "https",
+					"host": [
+						"api",
+						"spacexdata",
+						"com"
+					],
+					"path": [
+						"v4",
+						"launches",
+						"latest"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

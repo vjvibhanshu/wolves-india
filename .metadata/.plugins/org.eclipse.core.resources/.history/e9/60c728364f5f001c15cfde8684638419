@@ -1,0 +1,18 @@
+package testcases;
+
+import java.io.IOException;
+
+import org.testng.annotations.BeforeMethod;
+
+import base.Base;
+
+public class ReserveFlightTest extends Base {
+
+	public ReserveFlightTest() throws IOException {
+		super();
+	}
+	@BeforeMethod
+	public void launchInitialize() {
+		driver.get("https://blazedemo.com/reserve.php");
+	}
+}

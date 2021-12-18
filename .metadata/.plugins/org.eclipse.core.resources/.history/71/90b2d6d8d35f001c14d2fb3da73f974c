@@ -1,0 +1,9 @@
+package pages;
+
+public class PurchasePage {
+
+	public PurchasePage() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

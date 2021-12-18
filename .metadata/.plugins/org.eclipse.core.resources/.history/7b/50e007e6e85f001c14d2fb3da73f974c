@@ -1,0 +1,23 @@
+package testcases;
+
+import java.io.IOException;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import base.Base;
+
+public class ConfirmationPageTest extends Base {
+
+	public ConfirmationPageTest() throws IOException {
+		super();
+	}
+	
+	@Test
+	public void verifyTitle() {
+		
+		Assert.assertEquals(fetchTitile(), "BlazeDemo Confirmation");
+	}
+	
+	
+}

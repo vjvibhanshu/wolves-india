@@ -1,0 +1,9 @@
+package testcases;
+
+public class PurcahseTest {
+
+	public PurcahseTest() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

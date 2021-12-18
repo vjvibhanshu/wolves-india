@@ -1,0 +1,33 @@
+package testcases;
+
+import java.io.IOException;
+
+import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import base.Base;
+import pages.ReserveFlight;
+
+public class ReserveFlightTest extends Base {
+
+	ReserveFlight rev = new ReserveFlight();
+	
+	public ReserveFlightTest() throws IOException {
+		super();
+	}
+	@BeforeMethod
+	public void launchInitialize() {
+		driver.get("https://blazedemo.com/reserve.php");
+	}
+	
+	@Test
+	public void verifyTitle() {
+		Assert.assertEquals(fetchTitile(), "BlazeDemo - reserve");
+	}
+	
+	public void bookFlightNo() {
+		rev.chooseFlightNo("9696");
+	}
+
+}

@@ -1,0 +1,16 @@
+package pages;
+
+import java.io.IOException;
+
+import org.openqa.selenium.support.PageFactory;
+
+import base.Base;
+
+public class PurchasePage extends Base{
+
+	public PurchasePage() throws IOException {
+		super();
+		PageFactory.initElements(driver, this);
+	}
+
+}

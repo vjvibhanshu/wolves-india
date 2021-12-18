@@ -1,0 +1,33 @@
+package pages;
+
+import java.io.IOException;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import base.Base;
+
+public class HomePage extends Base{
+	
+	@FindBy(xpath="*//select[1]")
+	WebElement deptcity;
+	@FindBy(xpath="*//select[2]")
+	WebElement destcity;
+	
+	public HomePage() throws IOException {
+		PageFactory.initElements(driver, this);
+		// TODO Auto-generated constructor stub
+	}
+	
+	public String fetchTitle() {
+		return driver.getTitle();
+	}
+	
+	public void selectDeptcityText(String val)
+	{
+		dropDownSelect(deptcity,val);
+	}
+
+	
+}

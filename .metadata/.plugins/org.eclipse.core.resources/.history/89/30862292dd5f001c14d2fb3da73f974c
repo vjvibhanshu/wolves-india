@@ -1,0 +1,13 @@
+package testcases;
+
+import java.io.IOException;
+
+import base.Base;
+
+public class PurcahseTest extends Base {
+
+	public PurcahseTest() throws IOException {
+		super();
+	}
+
+}
