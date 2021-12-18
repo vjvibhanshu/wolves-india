@@ -1,9 +1,0 @@
-package generalUtilities;
-
-public class Reuse {
-
-	public Reuse() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

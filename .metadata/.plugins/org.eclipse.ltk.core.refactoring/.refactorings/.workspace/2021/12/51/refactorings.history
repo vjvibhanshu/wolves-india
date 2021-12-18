@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;PageObjectModelBasics&apos;" deleteContents="true" description="Delete resource &apos;PageObjectModelBasics&apos;" element1="/PageObjectModelBasics" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1639739886731"/>&#x0A;<refactoring comment="Delete resource &apos;com.blazedemo&apos;" deleteContents="true" description="Delete resource &apos;com.blazedemo&apos;" element1="/com.blazedemo" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1639743379631"/>
-</session>

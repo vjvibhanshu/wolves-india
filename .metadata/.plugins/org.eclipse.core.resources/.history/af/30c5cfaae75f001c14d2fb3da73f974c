@@ -1,9 +1,0 @@
-package testcases;
-
-public class ConfirmationPageTest {
-
-	public ConfirmationPageTest() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

@@ -1,9 +1,0 @@
-package pages;
-
-public class ReserveFlight {
-
-	public ReserveFlight() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

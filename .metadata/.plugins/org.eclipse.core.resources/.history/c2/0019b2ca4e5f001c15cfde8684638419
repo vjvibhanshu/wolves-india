@@ -1,9 +1,0 @@
-package testcases;
-
-public class ReserveFlightTest {
-
-	public ReserveFlightTest() {
-		// TODO Auto-generated constructor stub
-	}
-
-}
